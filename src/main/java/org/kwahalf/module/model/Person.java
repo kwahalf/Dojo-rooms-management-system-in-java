@@ -31,11 +31,11 @@ public class Person {
 		this.id = id;
 	}
 
-	public String getPersoName() {
+	public String getPersonName() {
 		return persoName;
 	}
 
-	public void setPersoName(String persoName) {
+	public void setPersonName(String persoName) {
 		this.persoName = persoName;
 	}
 

@@ -10,7 +10,7 @@ public class Fellow extends Person {
 
 	Fellow( String persoName, Boolean wantsAccomodation) {
 		super(persoName,  wantsAccomodation);
-		this.setRole("fellow");
+		this.setRole("FELLOW");
 	}
 	
 }

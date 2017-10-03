@@ -11,7 +11,7 @@ public class Staff extends Person {
 
 	Staff( String persoName, Boolean wantsAccomodation) {
 		super( persoName, wantsAccomodation);
-		this.setRole("Staff");
+		this.setRole("STAFF");
 		this.setWantsAccomodation(false);
 	}
 

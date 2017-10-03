@@ -19,6 +19,8 @@ public class OfficeModelTest {
 
 	@After
 	public void tearDown() throws Exception {
+		office = null;
+		person = null;
 	}
 
 	@Test
@@ -27,7 +29,7 @@ public class OfficeModelTest {
 		assertTrue("This is not an office named TEST",office.getRoomName().equals("TEST") );
 		assertTrue("Max capacity of an office is 6 people",office.getMaxCapacity().equals(6) );
 		office.setOccupants(person);
-		assertTrue("TestPerson is an occupant", office.getOccupantsByIndex(0).getPersoName().equals("TestPerson"));
+		assertTrue("TestPerson is an occupant", office.getOccupantsByIndex(0).getPersonName().equals("TestPerson"));
 		
 	}
 

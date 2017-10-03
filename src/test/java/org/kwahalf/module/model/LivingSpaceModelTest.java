@@ -19,6 +19,8 @@ public class LivingSpaceModelTest {
 
 	@After
 	public void tearDown() throws Exception {
+		livingSpace = null;
+		person = null;
 	}
 
 	@Test
@@ -27,7 +29,7 @@ public class LivingSpaceModelTest {
 		assertTrue("This is not a living space named TEST",livingSpace.getRoomName().equals("TEST") );
 		assertTrue("Max capacity of a living space is 4 people",livingSpace.getMaxCapacity().equals(4) );
 		livingSpace.setOccupants(person);
-		assertTrue("TestPerson is an occupant", livingSpace.getOccupantsByIndex(0).getPersoName().equals("TestPerson"));
+		assertTrue("TestPerson is an occupant", livingSpace.getOccupantsByIndex(0).getPersonName().equals("TestPerson"));
 		
 	}
 
